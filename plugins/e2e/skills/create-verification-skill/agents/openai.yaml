@@ -1,0 +1,16 @@
+interface:
+  display_name: "Create Verification Skill"
+  short_description: "Generate a verify-<app> skill and feature map on top of e2e"
+  icon_small: "../../assets/icon.png"
+  icon_large: "../../assets/icon.png"
+  brand_color: "#171717"
+  default_prompt: "Use $e2e:create-verification-skill to write a verify skill for this repo and prove it once against the running app."
+
+dependencies:
+  tools:
+    - type: "cli"
+      value: "npx"
+      description: "Run the e2e CLI from the project's node_modules"
+
+policy:
+  allow_implicit_invocation: false
